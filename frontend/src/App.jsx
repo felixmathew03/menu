@@ -22,7 +22,7 @@ function App() {
             </>
           } />
           <Route path="/addmenu" element={<AddMenu />} />
-          <Route path="/additem" element={<AddItem />} />
+          <Route path="/additem/:menu" element={<AddItem />} />
       </Routes>
     </BrowserRouter>
   )

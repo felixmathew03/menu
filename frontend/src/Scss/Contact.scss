@@ -1,67 +1,153 @@
-.Contact{
-    width: 100%;
-    height: 35vh;
-    padding-bottom:2% ;
-    background-color: black;
+.Contact {
+  width: 100%;
+  height: 35vh;
+  padding-bottom: 2%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+
+  .cus {
+    width: 24%;
+    height: 60%;
+    border: 1px solid white;
+    border-radius: 12px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items:end;
-    gap: 30px;
-    .cus{
-        width: 24%;
-        height: 60%;
-        border: 1px solid white;
-        border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: white;
-        h3{
-            color: rgb(68, 137, 248);
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-        .details,.detailss{
-            color: rgb(141, 140, 140);
-            width: 60%;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            .icon1{
-                color: rgb(107, 107, 2);
-            }
-        }
-        .detailss{
-            flex-direction: column;
-        }
-        .subdetails{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
-        .deep, .soft,.net{
-            font-size: 30px;
-            font-weight: 400;
-        }
-        .deep{
-            color: rgb(68, 137, 248);
-        }
-        .soft{
-            color: gray;
-        }
-        .clist{
-            font-family:sans-serif;
-            list-style-type: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            font-size: 12px;
-        }
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+    h3 {
+      color: rgb(68, 137, 248);
+      text-transform: uppercase;
+      font-size: 14px;
     }
+
+    .details,
+    .detailss {
+      color: rgb(141, 140, 140);
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      .icon1 {
+        color: rgb(107, 107, 2);
+      }
+    }
+
+    .detailss {
+      flex-direction: column;
+    }
+
+    .subdetails {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .deep,
+    .soft,
+    .net {
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .deep {
+      color: rgb(68, 137, 248);
+    }
+
+    .soft {
+      color: gray;
+    }
+
+    .clist {
+      font-family: sans-serif;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 12px;
+    }
+  }
+
+  // Media Queries for responsiveness
+
+  // Tablet view
+  @media (max-width: 768px) {
+        display: flex;
+  justify-content: center;
+  align-items: center;
+        flex-direction: column;
+    .cus {
+      width: 40%; // Increase width for better appearance on tablets
+      height: auto; // Allow flexible height
+    }
+
+    .cus h3 {
+      font-size: 16px; // Slightly increase heading size for tablet
+    }
+
+    .details,
+    .detailss {
+      width: 70%; // Adjust width for smaller screens
+    }
+
+    .subdetails {
+      gap: 10px; // Reduce gap between elements
+    }
+
+    .deep,
+    .soft,
+    .net {
+      font-size: 25px; // Decrease font size for tablet screens
+    }
+
+    .clist {
+      gap: 15px; // Reduce gap between list items
+    }
+  }
+
+  // Mobile view
+  @media (max-width: 480px) {
+    height: auto; 
+    padding-bottom: 5%; 
+        flex-direction: column;
+    .cus {
+      width: 80%;
+      height: auto;
+      gap: 15px;
+    }
+
+    .cus h3 {
+      font-size: 18px; 
+    }
+
+    .details,
+    .detailss {
+      width: 80%;
+    }
+
+    .subdetails {
+      gap: 8px;
+    }
+
+    .deep,
+    .soft,
+    .net {
+      font-size: 20px;
+    }
+
+    .clist {
+      gap: 10px; 
+      font-size: 10px; 
+    }
+  }
 }

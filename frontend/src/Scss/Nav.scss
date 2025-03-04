@@ -1,29 +1,75 @@
-.Nav{
+.Nav {
     height: 8vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center; /* Center the content vertically */
     padding-bottom: 1%;
     background-color: rgb(25, 25, 25);
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    .deep, .soft,.net{
-        font-size: 26px;
-        font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    .deep, .soft, .net {
+      font-size: 26px;
+      font-weight: 400;
     }
-    .deep{
-        color: rgb(68, 137, 248);
+  
+    .deep {
+      color: rgb(68, 137, 248);
     }
-    .soft{
-        color: gray;
+  
+    .soft {
+      color: gray;
     }
-    .nlist{
+  
+    /* Toggle button styling */
+    .toggle-button {
+      display: none;
+      background-color: #444;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+  
+    /* Navigation list styling */
+    .nlist {
+      display: flex;
+      align-items: baseline;
+      gap: 25px;
+      font-size: 12px;
+      text-transform: uppercase;
+      list-style-type: none;
+    }
+  
+    /* Media Query for smaller screens */
+    @media screen and (max-width: 768px) {
+      justify-content: space-between; /* Adjust spacing on small screens */
+      
+      .nlist {
+        display: none; /* Hide the menu by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+  
+      .toggle-button {
+        display: block; /* Show the toggle button on small screens */
+      }
+  
+      /* Show the menu when it is open */
+      .nlist.open {
         display: flex;
-        align-items: baseline;
-        gap: 25px;
-        font-size: 12px;
-        text-transform: uppercase;
-        list-style-type: none;
+      }
+  
+      .nlist li {
+        margin: 10px 0;
+        font-size: 14px; /* Increase font size for better readability */
+      }
     }
-}
+  }
+  

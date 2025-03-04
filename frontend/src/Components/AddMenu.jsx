@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import axios from "axios";
 import route from './route';
 import '../Scss/AddMenu.scss'
+import { useNavigate } from 'react-router-dom';
 
 const AddMenu = () => {
+  const navigate=useNavigate();
     const [menu,setMenu]=useState({
         mname:"",
         mdescription:""

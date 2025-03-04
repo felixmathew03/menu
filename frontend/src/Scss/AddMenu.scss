@@ -1,39 +1,73 @@
-.AddMenu{
+.AddMenu {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    .addMForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 2%;
-        border: 2px solid rgb(249, 190, 190);
+    padding: 0 10px; 
+    box-sizing: border-box;
+  
+    .addMForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 2%;
+      border: 2px solid rgb(249, 190, 190);
+      border-radius: 8px;
+      box-shadow: rgba(243, 102, 59, 0.412) 0px 7px 29px 0px;
+      width: 100%;
+      max-width: 400px;
+  
+      input {
+        width: 100%;
+        height: 35px;
+        border: 1px solid rgb(88, 85, 85);
         border-radius: 8px;
-        box-shadow: rgba(243, 102, 59, 0.412) 0px 7px 29px 0px;
-        input{
-            width: 200px;
-            height: 35px;
-            border: 1px solid rgb(88, 85, 85);
-            border-radius: 8px;
-            outline: none;
-            padding-left: 2%;
-            background-color: aliceblue;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        }
-        button{
-            width: 200px;
-            height: 35px;
-            border: none;
-            border-radius: 8px;
-            outline: none;
-            color: white;
-            background-color: rgb(235, 58, 27);
-            box-shadow: rgba(72, 72, 72, 0.2) 0px 2px 8px 0px;
-            cursor: pointer;
-        }
+        outline: none;
+        padding-left: 2%;
+        background-color: aliceblue;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+  
+      button {
+        width: 100%;
+        height: 35px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        color: white;
+        background-color: rgb(235, 58, 27);
+        box-shadow: rgba(72, 72, 72, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+      }
     }
-}
+  
+    @media (max-width: 768px) {
+      .addMForm {
+        max-width: 90%; 
+      }
+  
+      .addMForm input,
+      .addMForm button {
+        width: 90%; 
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .AddMenu {
+        padding: 0 5px;
+      }
+  
+      .addMForm {
+        padding: 4%; 
+      }
+  
+      .addMForm input,
+      .addMForm button {
+        width: 100%; 
+      }
+    }
+  }
+  
