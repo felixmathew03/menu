@@ -1,0 +1,21 @@
+.Footer{
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(109, 107, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fcontent{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 16px;
+        }
+    }
+}

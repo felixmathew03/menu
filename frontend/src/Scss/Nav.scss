@@ -1,0 +1,29 @@
+.Nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-bottom: 1%;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    .deep, .soft,.net{
+        font-size: 26px;
+        font-weight: 400;
+    }
+    .deep{
+        color: rgb(68, 137, 248);
+    }
+    .soft{
+        color: gray;
+    }
+    .nlist{
+        display: flex;
+        align-items: baseline;
+        gap: 25px;
+        font-size: 12px;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+}
