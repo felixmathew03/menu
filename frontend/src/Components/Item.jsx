@@ -31,7 +31,7 @@ const Item = ({selected}) => {
       <div className="icontent">
         <div className="heading">
             <div className="division"></div>
-            <h2>{title.mdescription}</h2>
+            <h2>{title.mname}</h2>
             <div className="division"></div>
         </div>
         <div className="idetails">
